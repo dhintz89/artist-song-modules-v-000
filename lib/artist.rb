@@ -17,8 +17,8 @@ class Artist
   # end
 
   def initialize
-    # refactor @@artists << self
-    self.class.all << self
+    # refactor @@artists << self to abstract for module
+    # self.class.all << self
     @songs = []
   end
 
