@@ -9,13 +9,14 @@ class Artist
   include Paramable
 
   @@artists = []
-
+  
+  # keeping all refactored code for reference:
   # def self.find_by_name(name)
   #   @@artists.detect{|a| a.name == name}
   # end
 
   def initialize
-    #refactor @@artists << self
+    # refactor @@artists << self
     self.class.all << self
     @songs = []
   end
@@ -24,7 +25,6 @@ class Artist
     @@artists
   end
 
-  # keeping refactored code for reference:
   # def self.reset_all
   #   self.all.clear
   # end
