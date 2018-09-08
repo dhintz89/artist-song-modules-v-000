@@ -12,6 +12,7 @@ class Song
   @@songs = []
 
   def initialize
+    # refactor @@songs << self
     self.class.all << self
   end
 
