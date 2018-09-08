@@ -5,16 +5,17 @@ class Song
   attr_reader :artist
   
 
-  extend Memorable
+  extend Memorable::ClassMethods
   extend Findable
   include Paramable
+  include Memorable::InstanceMethods
   
   @@songs = []
 
-  def initialize
-    # refactor @@songs << self
-    self.class.all << self
-  end
+  # def initialize
+  #   # refactor @@songs << self to abstract for module
+  #   # self.class.all << self
+  # end
 
   # keeping refactored code for reference:
   
