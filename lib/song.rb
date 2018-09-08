@@ -20,6 +20,7 @@ class Song
     @artist = artist
   end
 
+  # keeping refactored code for reference:
   # def self.reset_all
   #   @@songs.clear
   # end
