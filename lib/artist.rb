@@ -21,6 +21,7 @@ class Artist
     @@artists
   end
 
+  # keeping refactored code for reference:
   # def self.reset_all
   #   self.all.clear
   # end
