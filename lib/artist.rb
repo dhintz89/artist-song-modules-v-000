@@ -15,6 +15,7 @@ class Artist
   # end
 
   def initialize
+    #refactor @@artists << self
     self.class.all << self
     @songs = []
   end
