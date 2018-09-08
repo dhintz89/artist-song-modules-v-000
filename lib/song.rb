@@ -16,6 +16,8 @@ class Song
     self.class.all << self
   end
 
+  # keeping refactored code for reference:
+  
   # def self.find_by_name(name)
   #   @@songs.detect{|a| a.name == name}
   # end
@@ -24,7 +26,6 @@ class Song
     @artist = artist
   end
 
-  # keeping refactored code for reference:
   # def self.reset_all
   #   @@songs.clear
   # end
